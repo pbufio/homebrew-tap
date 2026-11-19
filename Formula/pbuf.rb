@@ -5,21 +5,21 @@
 class Pbuf < Formula
   desc "CLI for pbuf-registry — Protocol Buffers schema registry, multi-source vendoring, drift detection, and MCP server"
   homepage "https://pbuf.io"
-  version "0.20.0"
+  version "0.21.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pbufio/pbuf-registry/releases/download/v0.20.0/pbuf_0.20.0_darwin_amd64.tar.gz"
-      sha256 "ad8c39fe91a6b135c37c75b2bd21873761091fb3b48e67011ce5357d64c47184"
+      url "https://github.com/pbufio/pbuf-registry/releases/download/v0.21.0/pbuf_0.21.0_darwin_amd64.tar.gz"
+      sha256 "f45f615c4b9f7c5895e79d5da961c5ea8f1afa092e2774f9e93cf0e26a0c8491"
 
       define_method(:install) do
         bin.install "pbuf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pbufio/pbuf-registry/releases/download/v0.20.0/pbuf_0.20.0_darwin_arm64.tar.gz"
-      sha256 "1c409ce0ec53441b2e1944e7c8602b294d55fc5cea3f545dff597cf6321c2fee"
+      url "https://github.com/pbufio/pbuf-registry/releases/download/v0.21.0/pbuf_0.21.0_darwin_arm64.tar.gz"
+      sha256 "df57c59eb48528cc0984b1d22853d234f3cad1713f3da4ee825529b6d9d1d2af"
 
       define_method(:install) do
         bin.install "pbuf"
@@ -29,15 +29,15 @@ class Pbuf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pbufio/pbuf-registry/releases/download/v0.20.0/pbuf_0.20.0_linux_amd64.tar.gz"
-      sha256 "0c68deb6e072bc8e11fa65b23bc348117a1c2013639c130ecfe9044c743313f3"
+      url "https://github.com/pbufio/pbuf-registry/releases/download/v0.21.0/pbuf_0.21.0_linux_amd64.tar.gz"
+      sha256 "acaf96ad03af6f1856e601a32f4bf64ddf349a6d6c6d747a9d5ade58a08db0ba"
       define_method(:install) do
         bin.install "pbuf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pbufio/pbuf-registry/releases/download/v0.20.0/pbuf_0.20.0_linux_arm64.tar.gz"
-      sha256 "a1bd70a7ef33a2fdaf8e0df15b22639d4d50bb0ff0d6c0a8d4e63c2dc4131068"
+      url "https://github.com/pbufio/pbuf-registry/releases/download/v0.21.0/pbuf_0.21.0_linux_arm64.tar.gz"
+      sha256 "e8bec4588222bad8de3ea282c1fb96560f394eb5872e41d63d92e9bddfeebbd7"
       define_method(:install) do
         bin.install "pbuf"
       end
